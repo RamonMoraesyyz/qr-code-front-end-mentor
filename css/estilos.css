@@ -1,0 +1,73 @@
+/* Importei a mesma fonte indicada no figma usando o google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* Aqui faço um reset no margin e no padding do navegador e aplico a fonte que importei aí em cima  */
+body {
+  margin: 0;
+  padding: 0px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+/* Transferi o que você havia definido para a imagem no html para cá e acrescentei uma borda. 
+Todos estes valores peguei no arquivo figma */
+img {
+    border-radius: 10px;
+    height: 288px;
+    width: 288px;
+}
+
+/* Criei uma div que ocupa toda a tela (vh é a altura da tela, vw seria a largura da tela) 
+e usei css flexbox para centralizar na tela tudo o que está dentro dessa div. No caso, o card.
+Peguei esse valor de cor de fundo no figma.
+*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #D6E1EF;
+}
+
+/* Usei os mesmos valores indicados no figma  */
+.card {
+  background-color: white;
+  width: 290px;
+  height: auto;
+  border-radius: 16px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 25px 16px 11px -3px rgba(0,0,0,0.1);
+  /*falta colocar uma sombra, este site gera para você: https://box-shadow.dev/ */
+}
+
+h1{
+ font-size: 125%;
+
+}
+
+h2{
+
+ font-size: 75%;
+ color: rgb(142, 144, 145);
+}
+
+
+footer{
+  font-size: smaller;
+
+}
+
+/* footer */
+/* Falta fixar o footer em baixo. Pesquise por: position fixed */
+
+
+/* Essas classes são aquelas iniciais. Não fiz nada aqui. */
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
